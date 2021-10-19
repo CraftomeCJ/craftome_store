@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>FCC: Product Landing Page</title>
+</head>
+
+<!--User Story #1: My product landing page should have a header element 
+  with a corresponding id="header". -->
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+<!--User Story #2: I can see an image within the header element with a 
+  corresponding id="header-img". A company logo would make a good image here.-->
+      <img id="header-img" 
+        src="https://live.staticflickr.com/65535/51588262340_bd2da6c396_m.jpg" 
+        alt="original craftome logo" width="150" height="150">
+      <nav class="logo-text"><h4>Krafty_tribes <sup>by craftome</sup></h4></nav>
+    </div>
+
+<!--User Story #3: Within the #header element I can see a nav element with a 
+  corresponding id="nav-bar".-->
+  <!--User Story #4: I can see at least three clickable elements inside the 
+nav element, each with the class nav-link.-->
+<!-- User Story #5: When I click a .nav-link button in the nav element, 
+    I am taken to the corresponding section of the landing page. -->
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#offer">What We Offer?</a></li>
+        <li><a class="nav-link" href="#showMe">What We Have Now?</a></li>
+        <li><a class="nav-link" href="#pricing">How Much They Worth?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- User Story #7: My landing page has a form element with a 
+    corresponding id="form". -->
+<!--User Story #8: Within the form, there is an input field with id="email" 
+where I can enter an email address.-->
+<!--User Story #9: The #email input field should have placeholder text to 
+let the user know what the field is for.-->
+<!--User Story #10: The #email input field uses HTML5 validation to confirm 
+that the entered text is an email address.
+User Story #11: Within the form, there is a submit input with a 
+corresponding id="submit".
+User Story #12: When I click the #submit element, the email is submitted to 
+a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+-->
+    <section id="credits">
+        <h1>Handcrafted, Home-Made with Love💝</h1> <br>
+        <!--<h2>Bring Home Something Special, For Someone Special</h2><br>-->
+        <p>Be the first to know when we created our new addition, enter your 
+          email address and we will let you know when we putting our projects up 
+          for adoption and any future website updates we have.</p>
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" 
+        placeholder="Enter your email address" required=""><br>
+        <input id="submit" type="submit" value="Received Latest Creation Updates!" class="btn">
+      </form>
+    </section><hr>
+
+    <div class="container">
+      <div id="offer">
+
+        <div class="grid">
+          <div class="descriptions">
+            <h2>Premium Materials</h2>
+            <p>
+              Our <strong>Amigurumi</strong> are meticulously handcrafted 
+              one piece at a time by <em>Christy Mai & friends</em>, from good 
+              quality yarns imported from different part of the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="descriptions">
+            <h2>Fast Shipping</h2>
+           <p>We make sure you receive your beautifully handcrafted project 
+              as soon as we have finished making it, either via doorstep 
+              delivery or from our most entrusted SingPost services, ensuring 
+              your project arrived safe and sound to your doorstep or mailbox. 
+              We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="descriptions">
+            <h2>Quality Assurance</h2>
+           <p>For every purchase you make, we will ensure there are no damages or
+              faults. All projects are handcrafted, so maybe there is slight 
+              variation from one item to another. Such variations are inherent 
+              in crocheting of our project, so you may expect minor distinction 
+              that will make your purchase special and truly one of a kind.</p><br><hr>
+          </div>
+        </div>
+      
+<!-- User Story #6: I can watch an embedded product video with id="video".-->
+      <div id="showMe"
+        <div class="stream">
+          <section>
+            <h3>Our TraceTogether Token Pouch Collections</h3><br>
+              <iframe id="video" width="400" height="380" src="https://streamable.com/e/ezzphf" 
+              frameborder="0" allowfullscreen=""></iframe>
+          </section>
+        </div> 
+      </div>       
+  
+    <section id="pricing">
+      <div class="pricing-plan" id="single">
+          <img src ="https://live.staticflickr.com/65535/51571941125_af8bc6be35_m.jpg" 
+          alt="Single Doll for Sales" class="pricing-img">
+          <h2 class="pricing-header">Single Amigurumi</h2>
+          <ul class="pricing-features">
+              <li class="pricing-features-item">100% Handmade with Love</li>
+              <li class="pricing-features-item">Bring Home Something Special for Someone Special</li>
+          </ul>
+          <span class="pricing-price">$39.90</span>
+          <a href="#/" class="pricing-button">Will You Adopt Me?</a>
+        </div>
+
+      <div class="pricing-plan" id="duo">
+          <img src="https://live.staticflickr.com/65535/51571940040_62029eed4a_m.jpg" 
+          alt="Two Dolls for Sales" class="pricing-img">
+          <h2 class="pricing-header">A Pair Amigurumi</h2>
+          <ul class="pricing-features">
+              <li class="pricing-features-item">100% Handmade with Lot of Love</li>
+              <li class="pricing-features-item">Bring Home Something Special for Someone Special</li>
+          </ul>
+          <span class="pricing-price">$66.00</span>
+          <a href="#/" class="pricing-button is-featured">Will You Adopt Us Now?</a>
+      </div>
+
+      <div class="pricing-plan" id="triplets">
+          <img src="https://live.staticflickr.com/65535/51571255373_2ed7f12491_m.jpg" 
+          alt="Triplets for Sales" class="pricing-img">
+          <h2 class="pricing-header">Triplets Amigurumi</h2>
+          <ul class="pricing-features">
+              <li class="pricing-features-item">100% Handmade with Plenty of Love</li>
+              <li class="pricing-features-item">Bring Home Something Special for Someone Special</li>
+          </ul>
+          <span class="pricing-price">$100</span>
+          <a href="#/" class="pricing-button">Will You Adopt Us, Please?</a>
+      </div>
+    </section>
+    </div>
+
+  </div>
+
+</div>
+      
+</html>
+
+
+  <!-- <section id="pricing">
+        <div class="product" id="tenor">
+          <div class="level">Tenor Trombone</div>
+          <h2>$600</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="bass">
+          <div class="level">Bass Trombone</div>
+          <h2>$900</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="valve">
+          <div class="level">Valve Trombone</div>
+          <h2>$1200</h2>
+          <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2016, Original Trombones</span>
+      </footer>
+    </div>
+  </div>-->
+
+  <!--<nav id="video">
+              <div style="width:60%;height:0px;position:relative;padding:50%;">
+          <iframe src="https://streamable.com/e/ezzphf" frameborder="0" 
+          width="100%" height="100%" allowfullscreen 
+          style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;">
+          </iframe>
+        </div>
+    </nav>  -->
